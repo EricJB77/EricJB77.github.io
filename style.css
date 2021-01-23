@@ -1,0 +1,38 @@
+body {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  margin: 3vw;
+  background-color: black;
+  color: grey;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+h2 {
+  color: rgba(114, 146, 250, 0.733);
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+}
+
+.left, .right {
+  width: 46vw;
+}
+
+img {
+  height: 40vh;
+  width: auto;
+  margin: 3vh 0;
+}
+
+a {
+  color: blue;
+}
+
+a:visited {
+  color: green;
+}
