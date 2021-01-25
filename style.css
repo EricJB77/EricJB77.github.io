@@ -2,11 +2,16 @@ body {
   font-family: "Open Sans", helvetica, arial, sans-serif;
   margin: 3vw;
   background-color: black;
+  background-image: url("images/AClogo.jpg");
   color: grey;
 }
 
+.banner {
+  /*background-image: url("images/programminggb.jpg");*/
+}
+
 h1 {
-  font-family: 'Lobster', cursive;
+  /*font-family: 'Lobster', cursive;*/
 }
 
 h2 {
@@ -27,10 +32,6 @@ img {
   height: 40vh;
   width: auto;
   margin: 3vh 0;
-}
-
-a {
-  color: blue;
 }
 
 a:visited {
