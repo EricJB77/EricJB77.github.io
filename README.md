@@ -1,4 +1,2 @@
 
-Personal portfoio site (in progress)
-
-Please access through here http://EricJB77.Github.io
+My old Personal portfoio site (new website is currently being built elsewhere)
