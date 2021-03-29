@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1f6116786f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href ="src/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <section class="hero">
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></a></li>
+                <li><a href="#contact-me">Contact</a></a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="hero-area">
+            <div class="hero-text">
+                <h1>Eric Jean-Baptiste</h1>
+                <p>Full Stack Developer</p>
+                <div class="button-container">
+                    <div class="button"><a href="#about-me">About Me</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img class="project-image" src="src/images/2048.jpg" alt="2048">
+                <h3>2048</h3>
+                <p class="subtext">The game 2048 programmed in HTML, CSS and Javascript and jquery</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="https://ericjb77.github.io/2048/" target="_blank">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/Twitter bot.jpg" alt="Twitter bot image">
+                <h3>Twitter bot</h3>
+                <p class="subtext">A Twitter bot created in Python using the Twitter API</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="https://github.com/EricJB77">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/profile_pic.jpg" alt="Project Three Image">
+                <h3>Project Three</h3>
+                <p class="subtext">This is my project and some text and some text about it.  I enjoyed making this project.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="https://github.com/EricJB77">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/profile_pic.jpg" alt="Project Four Image">
+                <h3>Project Four</h3>
+                <p class="subtext">This is my project and some text and some text about it.  I enjoyed making this project.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="https://github.com/EricJB77">View here</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="aboutme-section" id="about-me">
+        <div class="headshot-container">
+            <img class="headshot" src="src/images/profile_pic.jpg" alt="Eric J headshot"/>
+        </div>
+        <div class="information">
+            <h2>About Me</h2>
+            <p>Hi, my name is Eric.  I am a full-stack software developer with many years of varied experience from coding frontend websites, to backend databases structures, to supporting and maintaining servers, and everything in between.  I have a passion for everything I.T. and a thurst for knowledge.  I love seeing how things tick and learning new technologies. </p>
+            <p>Along with my love for programming, my other two loves are my beautiful wife and my future baby (only about a month left!)</p>
+            <p><b>A little more background about me:</b>I started in computers when my parents bought me my first computer at the age of 13.  Of course, like most kids, all I wanted to do was play games on it.  But to run those games I had to know how much memory it had and how much space was available.  It wasn't the most advanced machine ever (IBM 286 with 64K of RAM - yes kilobytes, I couldn't even run Windows on it), so I had to learn about computer specs to make sure games would run on it.  Which allowed me to learn how to upgrade the RAM, the hard drive, the motherboard, etc.  From there I wanted to learned how to tell the computer how to do what I wanted (not just through games), so I started getting into programming, and the rest is history.  If you've made it this far, thanks for reading! As a reward, I'll let you in on a little secret.  There's a hidden easter egg on this site.  If you click on the 'O' in the word 'About Me' up above, you'll see what the secret is.  Thanks for reading!  :)</p>
+        </div>
+    </section>
+    <footer id="contact-me">
+        <h2>Contact me</h2>
+        <p>EricJB77@gmail.com</p>
+        <div class="socials">
+            <div>
+                <a href="https://github.com/EricJB77" target="_blank" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/eric-jb/" target="_blank" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+            </div>
+            <div>
+                <a href="https://twitter.com/EricJB77" target="_blank" class="social">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:EricJB77@gmail.com" target="_blank" class="social">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="src/app.js"></script>
+</body>
+</html>
