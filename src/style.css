@@ -117,7 +117,7 @@ p {
 }
 
 .subtext {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     margin: 10px;
 }
@@ -151,6 +151,10 @@ a {
 .aboutme-section {
     text-align: center;
     padding: 80px;
+}
+
+.information {
+    font-size: 25px;
 }
 
 footer {
