@@ -56,11 +56,6 @@ p {
     /* font-weight: 700; */
 }
 
-.subtext {
-    font-size: 15px;
-    font-weight: 300;
-}
-
 .hero-area {
     margin-top: 150px;
 }
@@ -116,9 +111,15 @@ p {
 }
 
 .project-image {
-    margin-top: 100px;
+    margin-top: 80px;
     width: 150px;
     /* border-radius: 125px; */
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 10px;
 }
 
 hr {
@@ -128,7 +129,7 @@ hr {
 
 .project-link {
     text-decoration: none;
-    color: #ef44be;
+    color: #24111f;
 }
 
 a {
