@@ -1,2 +1,2 @@
 
-My old Personal portfoio site (new website is currently being built elsewhere)
+Personal portfoio site written in HTML, CSS and Javascript (still under construction)
