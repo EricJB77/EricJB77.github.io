@@ -212,6 +212,7 @@ footer {
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
+        transition: var(--transition);
     }
 
     ul {
