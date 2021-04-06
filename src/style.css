@@ -25,17 +25,24 @@ section {
     transition: var(--transition);
 }
 
+.about-link {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .about-link:hover {
+    font-weight: bold;
     padding-right: 1rem;
     transition: var(--transition);
 }  
 
 .projects-link:hover {
+    font-weight: bold;
     padding: 1rem;
     transition: var(--transition);
 }  
 
 .contact-link:hover {
+    font-weight: bold;
     padding-left: 1rem;
     transition: var(--transition);
 }  
@@ -85,37 +92,51 @@ p {
 }
 
 .hero-area {
-    margin-top: 150px;
-}
-
-.hero-text {
-    text-align: center;
-    align-items: center;
-}
-
-.button-container {
+    background-image: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg.jpg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #000; */
+    color: #eee;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.button {
-    width: 200px;
-    height: 50px;
-    border-radius: 40px;
-    background-color: coral;
-    font-size: 38px;
+.hero-area p {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
     text-align: center;
-    margin-top: 10px;
+    overflow: hidden;
+    padding: 0.5rem;
 }
 
-.button:hover {
-    background-color: #ef44be;
+.typed-text {
+    font-weight: normal;
+    color: #dd7732;
 }
 
-.button:active {
-    background-color: #a9a9a9;
-    color: #808080;
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent;}
+    99% { background-color: transparent;}
+    100% { background-color: #ccc; }
 }
 
 .projects-section {
