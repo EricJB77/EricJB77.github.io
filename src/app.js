@@ -14,10 +14,10 @@ hamburgerButton.addEventListener('click', toggleButton)
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["full-stack developer","family man","movie buff","Tesla owner"];
+const textArray = ["full-stack developer","family man","movie buff","foodie","happy Tesla owner"];
 const typingDelay = 100;
 const erasingDelay = 100;
-const newTextDelay = 1000;
+const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -45,10 +45,10 @@ function erase () {
         cursorSpan.classList.remove("typing");
         textArrayIndex++;
         if (textArrayIndex >= textArray.length) textArrayIndex=0;
-        setTimeout(type, typingDelay + 1100);
+        setTimeout(type, typingDelay + 5);
     }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    if(textArray.length) setTimeout(type, newTextDelay + 250);
+    if(textArray.length) setTimeout(type, 5);
 });
