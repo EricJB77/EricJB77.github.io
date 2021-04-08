@@ -1,4 +1,5 @@
 // Nav bar section
+
 const hamburgerButton = document.getElementById('hamburger')
 const navList = document.getElementById('nav-list')
 
@@ -11,10 +12,11 @@ hamburgerButton.addEventListener('click', toggleButton)
 
 
 // Typewriter effect section
+
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["full-stack developer","family man","movie buff","foodie","happy Tesla owner"];
+const textArray = ["full-stack developer","family man","movie buff","foodie","Tesla owner"];
 const typingDelay = 100;
 const erasingDelay = 100;
 const newTextDelay = 2000;
@@ -52,3 +54,50 @@ function erase () {
 document.addEventListener("DOMContentLoaded", function() {
     if(textArray.length) setTimeout(type, 5);
 });
+
+
+
+// Smooth scrolling effect
+
+function smoothScroll(target,duration) {
+    var target = document.querySelector(target);
+    var targetPosition = target.getBoundingClientRect().top;
+    var startPosition = window.pageYOffset;
+    var distance = targetPosition - startPosition;
+    var startTime = null;
+
+    function animation(currentTime) {
+        if(startTime === null) startTime = currentTime;
+        var timeElapsed = currentTime - startTime;
+        var run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0,run);
+        if(timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+
+}
+
+
+var aboutlink = document.querySelector('.about-link')
+var projectslink = document.querySelector('.projects-link')
+var contactlink = document.querySelector('.contact-link')
+
+aboutlink.addEventListener('click',function() {
+    smoothScroll('.aboutme-section', 1500);
+})
+
+projectslink.addEventListener('click',function() {
+    smoothScroll('.projects-section', 1500);
+})
+
+contactlink.addEventListener('click',function() {
+    smoothScroll('.socials', 1500);
+})

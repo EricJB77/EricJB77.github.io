@@ -7,7 +7,7 @@
 }
 
 section {
-    background-color: white;
+    background-color: rgb(141, 130, 130);
 }
 
 .hamburger {
@@ -30,20 +30,23 @@ section {
 }
 
 .about-link:hover {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
-    padding-right: 1rem;
+    padding-right: 5rem;
     transition: var(--transition);
 }  
 
 .projects-link:hover {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
-    padding: 1rem;
+    padding: 5rem;
     transition: var(--transition);
 }  
 
 .contact-link:hover {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
-    padding-left: 1rem;
+    padding-left: 5rem;
     transition: var(--transition);
 }  
 
@@ -203,7 +206,7 @@ a {
 }
 
 .information {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 footer {
@@ -216,8 +219,12 @@ footer {
 .socials {
     display: flex;
     padding-bottom: 200px;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 50px;
+}
+
+.social {
+    padding: 1rem;
 }
 
 #contact-me {
@@ -274,5 +281,5 @@ footer {
     .project-container {
         display: flex;
         flex-wrap: wrap;
-    }
+    }  
 }
