@@ -32,21 +32,21 @@ section {
 .about-link:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
-    padding-right: 5rem;
+    /* padding-right: 5rem; */
     transition: var(--transition);
 }  
 
 .projects-link:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
-    padding: 5rem;
+    /* padding: 5rem; */
     transition: var(--transition);
 }  
 
 .contact-link:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
-    padding-left: 5rem;
+    /* padding-left: 5rem; */
     transition: var(--transition);
 }  
 
@@ -150,6 +150,7 @@ p {
 }
 
 .project-card {
+    background: rgb(168, 159, 159);
     width: 300px;
     height: 500px;
     box-shadow: 5px 5px 20px rgb(182, 178, 178);
