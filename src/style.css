@@ -43,6 +43,13 @@ section {
     transition: var(--transition);
 }  
 
+.resume-link:hover {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    /* padding: 5rem; */
+    transition: var(--transition);
+}  
+
 .contact-link:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -143,6 +150,9 @@ p {
 }
 
 .projects-section {
+    margin: 0;
+    padding: 0;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -225,12 +235,9 @@ footer {
 }
 
 .social {
-    padding: 1rem;
+    padding: 2rem;
 }
 
-#contact-me {
-    align-items: center;
-}
 
 @media only screen and (max-width: 1000px) {
     .hamburger {
@@ -267,20 +274,16 @@ footer {
         padding-left: 1rem;
     }
 
-
-    /* #nav-list {
-        height: 0;
-        overflow: hidden;
-        transition: var(--transition);
-    } */
+    .projects-section {
+        height: 400vh;
+    }
     
-    /* .show {
-        height: 4.3rem;
-        transition: var(--transition);
-    }     */
-
     .project-container {
         display: flex;
         flex-wrap: wrap;
     }  
+
+    .social {
+        padding: .5rem;
+    }    
 }
